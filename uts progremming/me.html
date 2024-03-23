@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Syabil</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    header, footer {
+        background-color:orange;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        
+    }
+    h1, h2 {
+        text-align: center;
+        color: #333;
+    }
+    
+    .t {
+        text-align: center;
+        color: #fdfdfd;
+    }
+    img.profile {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    p {
+        text-align: justify;
+        color: #666;
+    }
+    .hidden {
+        display: none;
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: o;
+    }
+    .header button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    .header button:hover {
+        color: #45a049;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .social-media-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    
+    
+    .ewe {
+     text-align: center;   
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1 class="t"><b> Portofolio Syabil</b></h1>
+    <div class="header">
+        <button onclick="showBio()">Tentang saya</button>
+        <button onclick="showSchool()">Sekolah</button>
+        <button onclick="showSocial()">Sosial Media</button>
+    </div>
+</header>
+<div class="container">
+    <div id="bio" class="page">
+        <img class="profile" src="g.png" alt="Foto Diri">
+        <h2>Syabil Haddad Zunnurrainn</h2>
+        <h2>Asal: celukan bawang/Kabupaten gerokgak, Provinsi bali </h2>
+        <p class="ewe">
+          Hai nama saya Syabil Haddad Zunnurain, Saya adalah Seorang santri dari pondok pesantren Hubbul Khoir , dan saya sangaat sekali belajar 3D Desain , Makanan favorit saya adalah keju dan minuman adalah green matcha , dan hobby saya adalah menonton anime dan gambar
+        </p>
+    </div>
+    <div id="school" class="page hidden">
+        <h2>Pendidikan</h2>
+        <h2>Sekolah: <br>
+            TK:Bustanul Atfal <br>
+            SD: SD Negri 13/ MI Ta'riful Fuad <br>
+            SMP: Pondok Pesantren Hubbul Khoir <br>
+        </h2>
+    
+    </div>
+    <div id="social" class="page hidden">
+        <h2>Sosial Media</h2>
+        <ul>
+            <li>
+                <img class="social-media-icon" src="i.png" alt="Instagram">
+                Instagram: <a href="https://www.instagram.com/Hazz_Nime" target="_blank">@Hazz_Nime</a>
+            </li>
+            <br>
+            <li>
+                <img class="social-media-icon" src="f.png" alt="Facebook">
+                Facebook: <a href="https://www.facebook.com/Syabil Eckerman" target="_blank">facebook.com/Syabil Eckerman</a>
+            </li>
+            <br>
+            <li>
+                <img class="social-media-icon" src="t.png"TikTok">
+                TikTok: <a href="https://www.tiktok.com/@hazz_nimee" target="_blank">@Hazz_nimee</a>
+            </li>
+            <br>
+            <li>
+                <img class="social-media-icon" src="i.png" alt="YouTube">
+                YouTube: <a href="https://www.youtube.com/channel/UCo7BgrD2n21BjDUXMG9udjQ" target="_blank">youtube.com/c/Syabilエッカーマン</a>
+            </li>
+            <br>
+            <li>
+                <img class="social-media-icon" src="W.png"TikTok">
+                Whastaap: <a href="https://api.whatsapp.com/send/?phone=6285337583545&text&type=phone_number&app_absent=0" target="_blank">@Syabil</a>
+            </li>
+           
+        </ul>
+    </div>
+</div>
+<footer class="footer">
+    <p class="ewe">Portofolio Syabil.</p>
+</footer>
+
+<script>
+    function showBio() {
+        hideAllPages();
+        document.getElementById("bio").classList.remove("hidden");
+    }
+
+    function showSchool() {
+        hideAllPages();
+        document.getElementById("school").classList.remove("hidden");
+    }
+
+    function showSocial() {
+        hideAllPages();
+        document.getElementById("social").classList.remove("hidden");
+    }
+
+    function hideAllPages() {
+        var pages = document.getElementsByClassName("page");
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].classList.add("hidden");
+        }
+    }
+</script>
+
+</body>
+</html>
